@@ -37,3 +37,25 @@ console.log(typeof Obj);
 console.log(typeof myFunction);
 console.log(typeof anotherId);
 
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Stack (Primitive) //copy changes only copy, Heap (Non-Primitive) reference changes both values
+
+let myYoutubename = "neeltatedotcom";
+
+let anothername = myYoutubename;
+anothername = "chaiaurcode";
+
+console.log(myYoutubename);
+console.log(anothername);
+
+let userOne = {
+    email:"user@gmail.com",
+    upi:"user@ybl"
+}
+
+let userTwo = userOne
+
+userTwo.email = "neel@gmail.com"
+console.log(userOne.email);
+console.log(userTwo.email);
