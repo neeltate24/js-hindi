@@ -13,7 +13,7 @@ function sayMyName(){
 
 function addTwoNumbers(number1, number2){ //parameters
     // let result = number1 + number2
-    // return result
+    // return result // after return no lines get print
     return number1 + number2
 }
 
@@ -23,7 +23,15 @@ const result = addTwoNumbers(3,5)
 
 console.log("Result :", result);
 
+function loginUserMessage(username = "sam"){
+    if(!username){  // !username = username===undefined
+        console.log("please enter a username");
+    }
+    return `${username} just logged in`
+}
 
+// console.log(loginUserMessage("neel"));
+console.log(loginUserMessage("neel"));
 
 
 
