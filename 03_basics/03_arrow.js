@@ -34,7 +34,23 @@ const chai = () => {
     // console.log(this.username);
 }
 
-chai()
+// chai()
+
+// const addTwo = (num1,num2) => {   //curly bases use return
+//     return num1 + num2;
+// }
+
+// const addTwo = (num1,num2) => num1 + num2;
+
+// const addTwo = (num1,num2) => (num1 + num2) // round brackets you can write like this
+
+const addTwo = (num1,num2) => ({username:"hitesh"})
+
+console.log(addTwo(3,4));
+
+// const myArray = [2,5,3,7,8]
+
+// myArray.forEach()   
 
 
 
